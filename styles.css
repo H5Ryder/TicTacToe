@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;200;400&display=swap');
+
+
+
+*{
+
+    --grey-color: grey;
+    --black-color: black;
+
+   
+    --gridHeight-Comp: 60vh;
+    --gridWidth-Comp: 60vh;
+    --resetHeight-Comp: 10vh;
+
+
+    --gridWidth-Mob: 90vw;
+    --gridHeight-Mob: 90vw;
+    --resetHeight-Mob: 15vw;
+
+
+
+
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+
+}
+
+
+h1, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: inherit;
+
+}
+
+.button {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1.5px solid var(--grey-color);
+    color: var(--grey-color);
+    font-size: 22px;
+}
+
+.selected {
+    color: var(--black-color);
+    border: 2px solid var(--black-color);
+    box-shadow: -1px 7px 22px -6px var(--grey-color);
+    
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5vw;
+
+   
+}
+
+.header h1 {
+    margin-right: auto;
+    
+}
+
+.grid {
+    height: var(--gridHeight-Comp);
+    width: var(--gridWidth-Comp);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    
+}
+
+.reset {
+    width: var(--gridWidth-Comp);
+    height: var(--resetHeight-Comp);
+    background-color: blanchedalmond;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1.5px solid black;
+}
+
+.field {
+    border: 1.5px solid black;
+}
+
+
+
+#top-right{
+     border-top-right-radius: 30px;
+ }
+
+
+#top-left{
+    border-top-left-radius: 30px;
+}
+ 
+
+#modal {
+    
+    background-color: transparent;
+    text-align: center;
+    margin: auto;
+    border: none;
+
+}
+
+.hide {
+    display:none;
+}
+
+#modal::backdrop {
+    background: rgb(0, 0, 0);
+    opacity: .7;
+}
+
+
+
+.modal .win {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    color: rgb(197, 197, 197);
+
+}
+
+.modal .sign-text {
+
+    font-size: 100px;
+    color: white;
+
+}
+

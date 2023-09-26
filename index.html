@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+ <div class="header">
+    <h1>TicTacToe</h1>
+    <button class="button x selected">x</button>
+    <button class="button o">o</button>
+</div>
+
+<div class="game">
+    <div class="grid">
+          <button id="top-left" class="field" data-id="0" data-size="0"></button>
+          <button class="field" data-id="0" data-size="1"></button>
+          <button id="top-right" class="field" data-id="0" data-size="2"></button>
+          <button class="field" data-id="1" data-size="0"></button>
+          <button class="field" data-id="1" data-size="1"></button>
+          <button class="field" data-id="1" data-size="2"></button>
+          <button class="field" data-id="2" data-size="0"></button>
+          <button class="field" data-id="2" data-size="1"></button>
+          <button class="field" data-id="2" data-size="2"></button>
+
+    </div>
+
+    <button class="reset">Reset</button>
+</div>
+
+
+<dialog class="modal" id="modal">
+    <div class="win">
+        <p class="winner hide">The Winner is</p>
+        <p class="sign-text sign hide">X</p>
+        <p class="winner draw hide">It's a Draw</p>
+    </div>
+
+</dialog>
+
+</body>
+
+ 
+</html>
